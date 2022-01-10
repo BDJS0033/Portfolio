@@ -1,0 +1,239 @@
+/* STYLING FOR BODY */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* HEADER/NAVBAR STYLES START */
+
+header {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    position: -webkit-sticky; 
+    background-image: url("../images/Heading-img.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 80%;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: azure;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black; 
+}
+
+nav li {
+    margin: 0 5px 10px 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav a {
+    color: azure;
+    font-size: 26px;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black; 
+}
+
+nav a:hover {
+    color: blanchedalmond;
+}
+
+.figure {
+    background-image: url("../images/Heading-img.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.greeting {
+    background-color: transparent;
+    text-align: right;
+    font-size: 48px;
+    text-decoration: 50px;
+    right: 100px;
+    bottom: 2px;
+    z-index: 50px;
+    position: absolute;
+    color: azure;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black; 
+}
+
+/* CONTAINER TO KEEP MAIN CONTENT SEPARATE */
+
+.container {
+    padding: 20px 40px 40px;
+    max-width: 1000px;
+    border-radius: 5px;
+    padding: 0 100px 100px 100px;
+    padding-bottom: 60px;
+}
+
+div.container {
+    margin-bottom: 50px;
+}
+
+/* STYLING ABOUT ME SECTION */
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.bio-pic {    
+    height: 300px;
+    width: 300px;
+    margin: 40px 30px 30px 0;
+    float: left;
+    border-radius: 5px;
+    border: 3px black solid;
+}
+
+.about-me {
+    height: 60px; 
+    overflow: hidden;
+    float: left;
+    left: 5%;
+}
+
+.bio-content {
+    padding: 5px 20px 50px 0;
+    font-size: 15px;
+    bottom: 20px;
+    display: inline;
+    padding: 20px;
+}
+
+p {
+    line-height: 32px;
+    text-indent: 20px;
+    vertical-align: baseline;
+}
+
+/* END STYLING */
+
+
+/* STYLING OF GALLERY - CREATES A NICE DISPLAY */
+
+.row {
+    margin: 8px -16px;
+  }
+  
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+  }
+
+/* END OF STYLING GALLERY */ 
+
+/* CLEAR FLOATS TO ALIGN HTML */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* START OF STYLING PORTFOLIO */
+
+.content {
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+
+.content img {
+    border: 2px burlywood solid;
+}
+
+.content img:hover {
+    opacity: .5;
+}
+
+/* END OF STYLING PORTFOLIO */
+
+/* START OF CONTACT SECTION */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;  
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    margin-top: 15px; 
+    margin-bottom: 12px; 
+    resize: vertical;
+    border-color: burlywood;
+}
+
+input[type=submit] {
+    background-color:blanchedalmond;
+    color: rosybrown;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: burlywood;
+}
+
+/* END OF CONTACT SECTION */
+
+/* FOOTER */
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: burlywood;
+    color: azure;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+/* MEDIA QUERIES */
+/* Makes everything fit in colum */
+
+@media screen and (max-width: 900px) {
+   .header
+   .nav {
+       position: relative;
+   }
+   
+    .column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header
+    .nav {
+       position: relative;
+   }
+    .column {
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
