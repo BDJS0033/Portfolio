@@ -53,4 +53,4 @@ _______________
 # Git Hub 
 ________
 
-URL for the repository: https://github.com/BDJS0033/Team-Profile-Generator
+URL for the repository: https://bdjs0033.github.io/Portfolio/
