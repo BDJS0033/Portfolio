@@ -24,9 +24,33 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
+## Installation
+____
+
+To deploy the Team Profile Generator, you can clone the SSH Key from the GitHub Repository, and using the Terminal of your choice, create a directory. You can also download the ZIP File.
+
+## Usage
+_____
+
+To initialize the application, type the following command:
+```
+Node index.js
+```
+The application will initialize and ask the user a series of questions, and generate a README File based on said user response.
+
+## Packages Required
+_______
+The NPM Packages installed to 
+```
+npm inqurier
+npm jest
+```
+
+## Walk Through Video
+_______________
+
 
 # Git Hub 
+________
 
-Please find the URL for the completed challenge: url[https://bdjs0033.github.io/Portfolio/]
-
-Please find the URL for the repository: url [https://github.com/BDJS0033/Portfolio]
+URL for the repository: https://github.com/BDJS0033/Team-Profile-Generator
